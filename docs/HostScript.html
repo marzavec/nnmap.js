@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: HostScript</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: HostScript</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>HostScript<span class="signature">(options, hostScriptStruct)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">Processes and stores the values and meta data of a given host script structure</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="HostScript"><span class="type-signature"></span>new HostScript<span class="signature">(options, hostScriptStruct)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error, warning and debug function references</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>hostScriptStruct</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">HostScript node to process</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="attrib"><span class="type-signature">(readonly) </span>attrib<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Provides default `attrib` property to ensure node processing, always returns
+current meta values
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line61">line 61</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="attrib"><span class="type-signature"></span>attrib<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Continues node walking recursion through the current attrib node
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="data"><span class="type-signature">(readonly) </span>data<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Returns all processed data, including child data, of the this class
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line78">line 78</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="options"><span class="type-signature"></span>options<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Merge default options with given options
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="script"><span class="type-signature">(readonly) </span>script<span class="type-signature"> :Array</span></h4>
+
+
+
+
+<div class="description">
+    Provides default `attrib` property to ensure node processing, always returns
+current scripts values
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line90">line 90</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="script"><span class="type-signature"></span>script<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Continues node walking recursion through the current script node, creating
+child classes as needed
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line99">line 99</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="scripts"><span class="type-signature"></span>scripts<span class="type-signature"> :Array</span></h4>
+
+
+
+
+<div class="description">
+    Scripts child holder
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="parseStruct"><span class="type-signature"></span>parseStruct<span class="signature">(curStruct)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Recursive parsing function, sets the value of this classes properties (if
+it exists), or calls the proper processing function, or builds required
+child classes for further processing
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>curStruct</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Current node being processed</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="host_hostLib_HostScript.js.html">host/hostLib/HostScript.js</a>, <a href="host_hostLib_HostScript.js.html#line42">line 42</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Address.html">Address</a></li><li><a href="Distance.html">Distance</a></li><li><a href="EventWrapper.html">EventWrapper</a></li><li><a href="Host.html">Host</a></li><li><a href="Hostnames.html">Hostnames</a></li><li><a href="HostScript.html">HostScript</a></li><li><a href="Ipidsequence.html">Ipidsequence</a></li><li><a href="NmapWorker.html">NmapWorker</a></li><li><a href="Os.html">Os</a></li><li><a href="Parser.html">Parser</a></li><li><a href="PortData.html">PortData</a></li><li><a href="Ports.html">Ports</a></li><li><a href="Scan.html">Scan</a></li><li><a href="Scanner.html">Scanner</a></li><li><a href="Script.html">Script</a></li><li><a href="Status.html">Status</a></li><li><a href="Tcpsequence.html">Tcpsequence</a></li><li><a href="Tcptssequence.html">Tcptssequence</a></li><li><a href="Times.html">Times</a></li><li><a href="Trace.html">Trace</a></li><li><a href="Uptime.html">Uptime</a></li><li><a href="Util.html">Util</a></li></ul><h3>Events</h3><ul><li><a href="Scanner.html#event:nmapOut">nmapOut</a></li><li><a href="Scanner.html#event:ready">ready</a></li><li><a href="Scanner.html#event:scanAborted">scanAborted</a></li><li><a href="Scanner.html#event:scanComplete">scanComplete</a></li><li><a href="Scanner.html#event:scanQueued">scanQueued</a></li><li><a href="Scanner.html#event:scanStarted">scanStarted</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Feb 23 2021 10:46:52 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

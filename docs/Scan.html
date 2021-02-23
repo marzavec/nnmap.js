@@ -1,0 +1,2926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Scan</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: Scan</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>Scan<span class="signature">(options, scanStruct)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">Processes and stores the values and meta data of a given scan log structure</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="Scan"><span class="type-signature"></span>new Scan<span class="signature">(options, scanStruct)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error, warning and debug function references</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>scanStruct</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">JS structure to process</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="args"><span class="type-signature"></span>args<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan args meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line40">line 40</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="attrib"><span class="type-signature">(readonly) </span>attrib<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Provides default `attrib` property to ensure node processing, always returns
+current meta values
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line190">line 190</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="attrib"><span class="type-signature"></span>attrib<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Continues node walking recursion through the current attrib node
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line198">line 198</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="data"><span class="type-signature">(readonly) </span>data<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Returns all processed data, including child data, of the this scan
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line247">line 247</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="debugging"><span class="type-signature">(readonly) </span>debugging<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Provides default `debugging` property to ensure node processing, will return
+default or newly set value
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line280">line 280</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="debugging"><span class="type-signature"></span>debugging<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Applies the new value for `debugging`
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line288">line 288</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="debuggingLevel"><span class="type-signature"></span>debuggingLevel<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan debugging level meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line100">line 100</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="down"><span class="type-signature"></span>down<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats host count default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line148">line 148</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="elapsed"><span class="type-signature"></span>elapsed<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats elapsed time meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line124">line 124</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="exit"><span class="type-signature"></span>exit<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats exit info meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line136">line 136</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="host"><span class="type-signature">(readonly) </span>host<span class="type-signature"> :Array</span></h4>
+
+
+
+
+<div class="description">
+    Provides default `host` property to ensure node processing, will return
+default or newly set value
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line298">line 298</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="host"><span class="type-signature"></span>host<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Loops through the provided hosts array node and creates Host children for
+further processing
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line307">line 307</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="hosts"><span class="type-signature"></span>hosts<span class="type-signature"> :Array</span></h4>
+
+
+
+
+<div class="description">
+    Scanned hosts object
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line106">line 106</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="meta"><span class="type-signature">(readonly) </span>meta<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Returns all current scan meta values
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line207">line 207</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="numservices"><span class="type-signature"></span>numservices<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scan service count meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line82">line 82</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="options"><span class="type-signature"></span>options<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Merge default options with given options
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="protocol"><span class="type-signature"></span>protocol<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan protocol meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line76">line 76</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="runstats"><span class="type-signature">(readonly) </span>runstats<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Returns all current scan run stats meta values
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line322">line 322</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="runstats"><span class="type-signature"></span>runstats<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Continues node walking recursion through the current runstats node
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line339">line 339</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="scaninfo"><span class="type-signature">(readonly) </span>scaninfo<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Returns all current scan info meta values
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line225">line 225</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="scaninfo"><span class="type-signature"></span>scaninfo<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Continues node walking recursion through the current scaninfo node
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line238">line 238</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="scanner"><span class="type-signature"></span>scanner<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan type meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line34">line 34</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="services"><span class="type-signature"></span>services<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan ports meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line88">line 88</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="start"><span class="type-signature"></span>start<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scan start time unix meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line46">line 46</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="startstr"><span class="type-signature"></span>startstr<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan start time plain meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line52">line 52</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="summary"><span class="type-signature"></span>summary<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats summary meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line130">line 130</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="time"><span class="type-signature"></span>time<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats stats finished time meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line112">line 112</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="timestr"><span class="type-signature"></span>timestr<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats stats finished time as string meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line118">line 118</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="total"><span class="type-signature"></span>total<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats host count default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line154">line 154</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="type"><span class="type-signature"></span>type<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan type meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line70">line 70</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="up"><span class="type-signature"></span>up<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scan stats host count default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line142">line 142</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="verbose"><span class="type-signature">(readonly) </span>verbose<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Provides default `verbose` property to ensure node processing, will return
+default or newly set value
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line262">line 262</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="verbose"><span class="type-signature"></span>verbose<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Applies the new value for `verbosityLevel`
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line270">line 270</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="verbosityLevel"><span class="type-signature"></span>verbosityLevel<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scan verbosity level meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line94">line 94</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="version"><span class="type-signature"></span>version<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Scanner version meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line58">line 58</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="xmloutputversion"><span class="type-signature"></span>xmloutputversion<span class="type-signature"> :String</span></h4>
+
+
+
+
+<div class="description">
+    Scanner output xml version meta default
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">String</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="parseStruct"><span class="type-signature"></span>parseStruct<span class="signature">(curStruct)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Recursive parsing function, sets the value of this classes properties (if
+it exists), or calls the proper processing function, or builds required
+child classes for further processing
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>curStruct</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Current node being processed</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scan_Scan.js.html">scan/Scan.js</a>, <a href="scan_Scan.js.html#line171">line 171</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Address.html">Address</a></li><li><a href="Distance.html">Distance</a></li><li><a href="EventWrapper.html">EventWrapper</a></li><li><a href="Host.html">Host</a></li><li><a href="Hostnames.html">Hostnames</a></li><li><a href="HostScript.html">HostScript</a></li><li><a href="Ipidsequence.html">Ipidsequence</a></li><li><a href="NmapWorker.html">NmapWorker</a></li><li><a href="Os.html">Os</a></li><li><a href="Parser.html">Parser</a></li><li><a href="PortData.html">PortData</a></li><li><a href="Ports.html">Ports</a></li><li><a href="Scan.html">Scan</a></li><li><a href="Scanner.html">Scanner</a></li><li><a href="Script.html">Script</a></li><li><a href="Status.html">Status</a></li><li><a href="Tcpsequence.html">Tcpsequence</a></li><li><a href="Tcptssequence.html">Tcptssequence</a></li><li><a href="Times.html">Times</a></li><li><a href="Trace.html">Trace</a></li><li><a href="Uptime.html">Uptime</a></li><li><a href="Util.html">Util</a></li></ul><h3>Events</h3><ul><li><a href="Scanner.html#event:nmapOut">nmapOut</a></li><li><a href="Scanner.html#event:ready">ready</a></li><li><a href="Scanner.html#event:scanAborted">scanAborted</a></li><li><a href="Scanner.html#event:scanComplete">scanComplete</a></li><li><a href="Scanner.html#event:scanQueued">scanQueued</a></li><li><a href="Scanner.html#event:scanStarted">scanStarted</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Feb 23 2021 10:46:52 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

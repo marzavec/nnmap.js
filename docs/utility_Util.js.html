@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: utility/Util.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,53 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: utility/Util.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+  * Contains various general-purpose utility methods
+  */
+class Util {
+  constructor() {
+    throw new Error('Util is a static class and should not be constructed');
+  }
 
+  /**
+   * Sets properties on an object that are not already defined
+   * @param {Object} def Default properties
+   * @param {Object} given Object to assign defaults to
+   * @returns {Object}
+   * @private
+   */
+  static mergeDefault(def, given) {
+    if (!given) {
+      return def;
+    }
 
-    <h3> </h3>
+    for (const key in def) { // eslint-disable-line no-restricted-syntax
+      if (!{}.hasOwnProperty.call(given, key)) {
+        // eslint-disable-next-line no-param-reassign
+        given[key] = def[key];
+      } else if (given[key] === Object(given[key])) {
+        // eslint-disable-next-line no-param-reassign
+        given[key] = this.mergeDefault(def[key], given[key]);
+      }
+    }
 
+    return given;
+  }
+}
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports = Util;
+</code></pre>
+        </article>
+    </section>
 
 
 

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: EventWrapper</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: EventWrapper</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>EventWrapper<span class="signature">(options)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">Core parser for nmap xml log files</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="EventWrapper"><span class="type-signature"></span>new EventWrapper<span class="signature">(options)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Class options</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="base_EventWrapper.js.html">base/EventWrapper.js</a>, <a href="base_EventWrapper.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li>EventEmitter</li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="throwDebug"><span class="type-signature"></span>throwDebug<span class="signature">(debugText)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Emits a debug message to any listeners, calls the `onDebug` function if set
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>debugText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Debug message text value</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="base_EventWrapper.js.html">base/EventWrapper.js</a>, <a href="base_EventWrapper.js.html#line48">line 48</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="throwError"><span class="type-signature"></span>throwError<span class="signature">(errText)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Emits an error to any listeners, calls the `onError` function if set
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>errText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Error message text value</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="base_EventWrapper.js.html">base/EventWrapper.js</a>, <a href="base_EventWrapper.js.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="throwWarning"><span class="type-signature"></span>throwWarning<span class="signature">(warnText)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Emits a warning to any listeners, calls the `onWarning` function if set
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>warnText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Warning message text value</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="base_EventWrapper.js.html">base/EventWrapper.js</a>, <a href="base_EventWrapper.js.html#line34">line 34</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Address.html">Address</a></li><li><a href="Distance.html">Distance</a></li><li><a href="EventWrapper.html">EventWrapper</a></li><li><a href="Host.html">Host</a></li><li><a href="Hostnames.html">Hostnames</a></li><li><a href="HostScript.html">HostScript</a></li><li><a href="Ipidsequence.html">Ipidsequence</a></li><li><a href="NmapWorker.html">NmapWorker</a></li><li><a href="Os.html">Os</a></li><li><a href="Parser.html">Parser</a></li><li><a href="PortData.html">PortData</a></li><li><a href="Ports.html">Ports</a></li><li><a href="Scan.html">Scan</a></li><li><a href="Scanner.html">Scanner</a></li><li><a href="Script.html">Script</a></li><li><a href="Status.html">Status</a></li><li><a href="Tcpsequence.html">Tcpsequence</a></li><li><a href="Tcptssequence.html">Tcptssequence</a></li><li><a href="Times.html">Times</a></li><li><a href="Trace.html">Trace</a></li><li><a href="Uptime.html">Uptime</a></li><li><a href="Util.html">Util</a></li></ul><h3>Events</h3><ul><li><a href="Scanner.html#event:nmapOut">nmapOut</a></li><li><a href="Scanner.html#event:ready">ready</a></li><li><a href="Scanner.html#event:scanAborted">scanAborted</a></li><li><a href="Scanner.html#event:scanComplete">scanComplete</a></li><li><a href="Scanner.html#event:scanQueued">scanQueued</a></li><li><a href="Scanner.html#event:scanStarted">scanStarted</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Feb 23 2021 10:46:52 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
