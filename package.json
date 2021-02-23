@@ -63,12 +63,15 @@
     "setup:ci": "npx semantic-release-cli setup",
     "?semantic-release": "Automatically publish the package following semantic versioning rules.",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "?report-coverage": "Run and publish a code coverage report to codecov.io",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t 769a02e2-b68d-443f-a069-1b0f989d95b7"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "chai": "^4.2.0",
+    "codecov": "^3.8.1",
     "commitizen": "^4.2.2",
     "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
