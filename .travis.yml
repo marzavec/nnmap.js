@@ -1,0 +1,25 @@
+language: node_js
+addons:
+  apt:
+    packages:
+      - nmap
+  homebrew:
+    packages:
+      - nmap
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: false
+node_js:
+  - "12"
+  - "11"
+  - "10"
+  - "8"
+script:
+  - npm run test
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+branches:
+  only:
+    - master

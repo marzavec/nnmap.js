@@ -1,0 +1,135 @@
+{
+  "name": "nnmap.js",
+  "version": "1.0.0",
+  "description": "Sane and lightweight nmap wrapper, with extras!",
+  "main": "./src/index.js",
+  "repository": "git@github.com:marzavec/nnmap.js.git",
+  "author": "Marzavec <admin@marzavec.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^3.17.5"
+  },
+  "keywords": [
+    "nmap",
+    "security",
+    "enumeration",
+    "port",
+    "scanner",
+    "IPv4",
+    "IPv6",
+    "host discovery",
+    "fingerprinting"
+  ],
+  "scripts": {
+    "?info": "Display information about the scripts.",
+    "info": "npm-scripts-info",
+    "?start": "Startup the module.",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "?start:prod": "Startup the module with a `production` environment.",
+    "start:prod": "NODE_ENV=production node -r dotenv/config ./lib/index.js",
+    "?start:dev": "Startup the module with a `development` environment.",
+    "start:dev": "NODE_ENV=development node -r dotenv/config ./src/index.js",
+    "?debug": "Start a debugger for the `main` entry point.",
+    "debug": "node --inspect --debug-brk -r dotenv/config ./src/index.js",
+    "?debug:tests": "Start a debugger for the tests",
+    "debug:tests": "mocha --inspect --debug-brk -r dotenv/config ./test/*.js",
+    "?commit": "Run a wizard to do a `git commit` and `git push` following commitizen rules.",
+    "commit": "git-cz && git push origin HEAD",
+    "?commit:retry": "Retry the last `failed` commit",
+    "commit:retry": "git-cz --retry && git push origin HEAD",
+    "?commit:all": "Add all changes to stage and run `npm run commit`",
+    "commit:all": "git add -A && npm run commit",
+    "?test": "Run all tests.",
+    "test": "npm run lint && nyc mocha ./test/*.js",
+    "?test:watch": "Run all tests and watch for changes.",
+    "test:watch": "mocha -r dotenv/config ./test/*.js --watch",
+    "?lint": "Run Eslint.",
+    "lint": "eslint .",
+    "?lint:watch": "Run Eslint, and watch for changes.",
+    "lint:watch": "esw -w --ignore-path .gitignore .",
+    "?cov": "Show coverage summary on the console",
+    "cov": "nyc report",
+    "?cov:ls": "Show a list of files coverage on the console",
+    "cov:ls": "nyc report --reporter=text",
+    "?cov:html": "Show a coverage HTML report",
+    "cov:html": "nyc report --reporter=html && http-server ./.coverage",
+    "?setup": "Install dependencies and run the tests.",
+    "setup": "npm install && npm test",
+    "?setup:ci": "Setup semantic-release and CI",
+    "setup:ci": "npx semantic-release-cli setup",
+    "?semantic-release": "Automatically publish the package following semantic versioning rules.",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "chai": "^4.2.0",
+    "commitizen": "^4.2.2",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "http-server": "^0.12.3",
+    "husky": "^4.3.6",
+    "if-env": "^1.0.4",
+    "mocha": "^8.2.1",
+    "npm-scripts-info": "^0.3.9",
+    "nyc": "^15.1.0",
+    "semantic-release": "^17.3.0",
+    "travis-deploy-once": "^5.0.11"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 80,
+    "statements": 80,
+    "functions": 80,
+    "branches": 80,
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/**/*.spec.js"
+    ],
+    "ignore-class-method": "methodToIgnore",
+    "reporter": [
+      "html",
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "require": [
+      "dotenv/config"
+    ],
+    "extension": [],
+    "cache": true,
+    "all": true,
+    "temp-dir": "",
+    "report-dir": "./.coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "if-env IGNORE_GHOOKS=true || npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
