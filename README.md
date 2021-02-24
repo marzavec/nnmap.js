@@ -35,7 +35,7 @@ nnmap.js is a lightweight [Nmap](https://nmap.org/) wrapper module with a focus 
 
 ## Installation
 
-**Node.js (version 12.0) and Nmap (version 7.8) or newer are required.**
+**Node.js (version 14.0) and Nmap (version 7.8) or newer are required.**
 
 Add to your project with: `npm install nnmap.js --save`
 

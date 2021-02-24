@@ -11,7 +11,7 @@
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "fast-xml-parser": "^3.17.5"
+    "fast-xml-parser": "^3.18.0"
   },
   "keywords": [
     "nmap",
