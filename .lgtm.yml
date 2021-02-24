@@ -1,0 +1,12 @@
+path_classifiers:
+  docs:
+    - '**/*.md'
+    - 'docs/*'
+  test:
+    - '/app.js'
+extraction:
+  javascript:
+    index:
+      exclude:
+        - .cz-config.js
+        - app.js
