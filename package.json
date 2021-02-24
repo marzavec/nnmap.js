@@ -1,6 +1,6 @@
 {
   "name": "nnmap.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sane and lightweight nmap wrapper, with extras!",
   "main": "./src/index.js",
   "repository": "git@github.com:marzavec/nnmap.js.git",
