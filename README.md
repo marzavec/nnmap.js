@@ -2,7 +2,6 @@
 [![NPM downloads](https://img.shields.io/npm/dt/nnmap.js.svg?maxAge=3600)](https://www.npmjs.com/package/nnmap.js)
 [![travis build](https://img.shields.io/travis/marzavec/nnmap.js.svg?style=flat)](https://travis-ci.org/marzavec/nnmap.js)
 [![Dependency Status](https://david-dm.org/marzavec/nnmap.js.svg?theme=shields.io)](https://david-dm.org/marzavec/nnmap.js)
-[![devDependency Status](https://david-dm.org/marzavec/nnmap.js/dev-status.svg?theme=shields.io)](https://david-dm.org/marzavec/nnmap.js#info=devDependencies)
 [![Codecov](https://img.shields.io/codecov/c/github/marzavec/nnmap.js.svg)](https://app.codecov.io/gh/marzavec/nnmap.js)
 [![Language grade: JS/TS](https://img.shields.io/lgtm/grade/javascript/github/marzavec/nnmap.js.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/marzavec/nnmap.js/context:javascript)
 [![MIT License](https://img.shields.io/github/license/marzavec/nnmap.js.svg?style=flat)](http://opensource.org/licenses/MIT)
